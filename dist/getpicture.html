@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <title>Wheare</title>
+
+  <link rel="stylesheet" href="vendor/ionic/css/ionic.css" />
+  <link rel="stylesheet" href="stylesheets/application.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/dist/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="vendor/topcoat/css/topcoat-mobile-light.min.css" />
+
+  <script src="javascripts/onerror.js"></script>
+  <script src="javascripts/console.log.js"></script>
+  <script src="js/vendor/jquery.js"></script>
+
+  <!-- cordova.js is served from localhost to ensure the correct version -->
+  <script src="http://localhost/cordova.js"></script>
+  <script src="components/steroids-js/steroids.js"></script>
+
+  <script src="javascripts/application.js"></script>
+</head>
+<body class="content">
+  <div class="content-padded">
+    <div class="title">
+      <div class="container-fluid">
+        <div class="panel panel-info">
+          <div class="panel-heading"><h4>Camera</h4></div>
+          <div class="panel-body">
+            <div class="screen">
+              <div class="col-xs-6 md-4">
+                <img id="picture">
+                <img id="spinner" src="vendor/topcoat/img/spinner2x.png">
+                <div class="topcoat-button--cta full center" ontouchend="capturePhoto()">Capture photo</div>
+                <br><br>
+                <div class="topcoat-button full center" ontouchend="chooseImage()">Choose from Photo Library</div>
+                <br><br>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div><!--/panel-body-->
+        </div><!--/panel-->
+      </div>
+    </div>
+  </body>
+  </html>
